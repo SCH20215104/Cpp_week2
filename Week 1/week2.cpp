@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 using namespace std;
 
 int main() {
@@ -9,7 +8,6 @@ int main() {
 	cout << "영문자를 입력하고 Ctrl+Z를 치세요" << endl;
 
 	while (cin >> Alphabet) {
-		cin >> Alphabet;
 		switch (Alphabet) {
 		case 'a':
 		case 'e':
