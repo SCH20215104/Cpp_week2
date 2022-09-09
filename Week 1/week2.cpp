@@ -4,12 +4,12 @@
 using namespace std;
 
 int main() {
-	char Alphabet, sentence;
+	char Alphabet;
 	int vowel = 0, consonants = 0;
 
 	cout << "영문자를 입력하고 Ctrl+Z를 치세요" << endl;
 
-	while (cin.eof() != true) {
+	while (cin >> Alphabet) {
 		cin >> Alphabet;
 		switch (Alphabet) {
 		case 'a':
@@ -22,7 +22,6 @@ int main() {
 		default:
 			consonants++;
 			break;
-
 		}
 	}
 	cout << "모음 : " << vowel << endl;
